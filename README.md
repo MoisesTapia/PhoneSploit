@@ -26,7 +26,7 @@ python2 main.py
 ```
 git clone https://github.com/Zucccs/PhoneSploit
 cd PhoneSploit
-pip install requeriments.txt
+pip install -r requeriments.txt
 python2 main_linux.py
 ```
 # Run PhoneSploit in Docker
