@@ -3,7 +3,8 @@ Port Forwarding<br>        NetStat <br>
 Grab wpa_supplicant <br>   Turn WiFi On/Off <br>                
 Show Mac/Inet<br>          Remove Password<br>
 Extract apk from app<br>   Use Keycode <br>           
-Get Battery Status<br>     Get Current Activity<br>   
+Get Battery Status<br>     Get Current Activity<br> 
+Run PhoneSploit in Docker  All information in Docker folder<br>  
 
 # PhoneSploit 
 Using open Adb ports we can exploit a device
@@ -17,7 +18,7 @@ Using open Adb ports we can exploit a device
 git clone https://github.com/Zucccs/PhoneSploit
 extract adb.rar to the phonesploit directory 
 cd PhoneSploit
-pip install colorama
+pip install -r requeriments.txt
 python2 main.py
 ```
 
@@ -25,9 +26,18 @@ python2 main.py
 ```
 git clone https://github.com/Zucccs/PhoneSploit
 cd PhoneSploit
-pip install colorama
+pip install requeriments.txt
 python2 main_linux.py
 ```
+# Run PhoneSploit in Docker
+
+Look the documtation in 'Docker/README.md'
+
+quick build:
+```bash
+docker build -t phonesploit .
+```
+
 # IF ADB NOT FOUND
 sudo apt update
 sudo apt install android-tools-adb android-tools-fastboot
